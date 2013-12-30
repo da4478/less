@@ -1,0 +1,54 @@
+.b {
+    display: inline-block;
+    padding: 8px 12px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    .u-sel;
+    .r-corn(4px);
+}
+
+.b.bd {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.b-gen (
+@br: transparent;
+@bg: transparent; 
+@color:#000; 
+@bgh: transparent; 
+@colorh:#000;
+@col1: transparent;
+@col2:transparent;
+@col3:transparent;
+@colH1:transparent;
+@colH2:transparent;
+@colH3:transparent;
+@fontsize: 16px
+) {
+    color: @color;
+    font-size: @fontsize;
+    border: 1px solid @br;
+    background-color: @bg;
+    .liner-image-cl(@col1; @col2; @col3);
+    &:hover { 
+        color: @colorh;
+        background-color: @bgh;
+        .liner-image-cl(@colH1; @colH2; @colH3);
+    }
+    &.bd:hover{
+        color: @color;
+        background-color: @bg;
+        .liner-image-cl(@col1; @col2; @col3);
+    }
+} 
+

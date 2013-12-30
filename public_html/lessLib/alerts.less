@@ -1,0 +1,48 @@
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    .close {
+        position: relative;
+        top: -2px;
+        color: inherit;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        text-shadow: 0 1px 0 #ffffff;
+        opacity: 0.4;
+        filter:alpha(opacity=40);
+        float: right;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1;
+        &:hover, &:focus {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+    }
+    .alert-link {
+        font-weight: bold;
+    }
+    h4 {
+        margin-top: 0;
+        color: inherit;
+    }
+
+}
+
+
+.alert-gen (@cl:#468847; @bg:#dff0d8; @bc:#d6e9c6; @alc:#356635) {
+    color: @cl;
+    background-color: @bg;
+    border-color: @bc;
+    .alert-link, h4 {
+        color: @alc;
+    }
+}

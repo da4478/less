@@ -1,0 +1,36 @@
+.r-corn (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.u-sel (){
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.b-shadow (){
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.liner-image(@direction; @cls; @cle) {
+    background-image: -webkit-linear-gradient(@direction,@cls,@cle);
+    background-image: linear-gradient(@direction,@cls,@cle);
+}
+
+.liner-image-cl(@cl1; @cl2; @cl3) {
+    background-image: -webkit-linear-gradient(@cl1, @cl2 50%, @cl3);
+    background-image: linear-gradient(@cl1, @cl2 50%, @cl3);
+}
+
+.shadow-gen (@HorizontalLength; @VerticalLength; @BlurRadius; @Spread; @color; @alpha:1) {
+    -webkit-box-shadow: @HorizontalLength @VerticalLength @BlurRadius @Spread hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+    -moz-box-shadow: @HorizontalLength @VerticalLength @BlurRadius @Spread  hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+    box-shadow: @HorizontalLength @VerticalLength @BlurRadius @Spread  hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+}

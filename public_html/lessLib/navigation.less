@@ -1,0 +1,91 @@
+.navbar {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    background-image: -webkit-linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-repeat: no-repeat;
+    border: 1px solid #345578;
+    border-left: 0 none;
+    border-right: 0 none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d94bf', endColorstr='#ff3e648d', GradientType=0);
+    filter: none;
+    background-color: #446e9b;
+    border-color: #345578;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.navbar:before, .navbar:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+}
+
+.navbar-header:before, .navbar-header:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.navbar .navbar-toggle {
+    border-color: #345578;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-toggle {
+        display: none;
+    }
+}
+
+.navbar .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.navbar .navbar-brand {
+    color: #dddddd;
+}
+
+.navbar .navbar-brand, .navbar .navbar-brand:hover {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    -webkit-transition: color ease-in-out 0.2s;
+    transition: color ease-in-out 0.2s;
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+color: #ffffff;
+background-color: transparent;
+-webkit-transition: color ease-in-out 0.2s;
+transition: color ease-in-out 0.2s;
+text-decoration: none;
+}

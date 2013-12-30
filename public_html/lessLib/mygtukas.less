@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    .u-sel;
+    .r-corn(4px);
+}
+
+.btn-gen (
+@br: transparent,
+@bg: transparent, 
+@color:#000, 
+@brh: transparent, 
+@bgh: transparent, 
+@colorh:#000, 
+@fontsize: 16px
+) {
+    color: @color;
+    font-size: @fontsize;
+    border: 1px solid @br;
+    background-color: @bg;
+    .liner-image(top; @bg; (@bg+#181616));
+    &:hover { 
+        color: @colorh;
+        border: 1px solid @brh;
+        background-color: @bgh;
+        .liner-image(top; @bgh; (@bgh+#181616));
+    }
+} 
+

@@ -1,0 +1,81 @@
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+}
+
+.table thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table > thead > tr > th {
+    /*border: 1px solid #dddddd;*/
+    vertical-align: bottom;
+    border-bottom: 2px solid #9dcadb;
+    padding: 8px;
+    line-height: 1.428571429;
+}
+
+.table th, .table td {
+    text-align: left;
+    display: table-cell;
+}
+
+.table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table > tbody > tr:nth-child(odd) > td {
+    background-color: #f2f2f2;
+}
+
+.table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-bottom: 2px solid transparent;
+}
+
+.table > tbody > tr:hover, .table > tbody > tr:hover > td, .table > tbody > tr:hover > th {
+    background-color: #d5ebf4;
+}
+
+.table > tbody > .success > td {
+    background-color: #dff0d8!important;
+}
+
+.table > tbody > tr > .success:hover, .table > tbody > .success:hover > td, .table > tbody > .success:hover > th {
+    background-color: #d0e9c6!important;
+}
+
+.table > tbody > .danger > td {
+    background-color: #f2dfde!important;
+}
+
+.table > tbody > tr > .danger:hover, .table > tbody > .danger:hover > td, .table > tbody > .danger:hover > th {
+    background-color: #ebccd1!important;
+}
+
+.table > tbody > .warning > td {
+    background-color: #faebcc!important;
+}
+
+.table > tbody > tr > .warning:hover, .table > tbody > .warning:hover > td, .table > tbody > .warning:hover > th {
+    background-color: #f3d086!important;
+}
+
+.table > tbody > .active > td {
+    border-bottom: 2px solid #000;
+}

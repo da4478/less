@@ -1,0 +1,23 @@
+.message {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eee;
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    p {
+        margin: 0 0 10px;
+    }
+}
+
+.message-gen (@br: #bce8f1, @bg: #f4f8fa, @hc: #3a87ad, @pc: #000) {
+    background-color: @bg;
+    border-color: @br;
+    p {
+        color: @pc;
+    }
+    h4 {
+        color: @hc;
+    }
+}

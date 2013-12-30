@@ -1,0 +1,83 @@
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin-bottom: 20px;
+    .input-addon {
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1;
+        color: #555;
+        text-align: center;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        &:first-child {
+            border-right: 0;
+        }
+    }
+
+}
+
+.input-btn > .b {
+    position: relative;
+    margin-top: 0;
+    padding: 4px 12px;
+}
+
+.input-addon, .input-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group input:first-child,
+.input-addon:first-child,
+.input-btn:first-child > .b,
+.input-btn:first-child > .dropdown-toggle,
+.input-btn:last-child > .b:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-btn:last-child > .b {
+    margin-left: -1px;
+}
+
+.input-addon, .input-btn, .input-group .form-control {
+    display: table-cell;
+}
+
+.input-addon:not(:first-child):not(:last-child),
+.input-btn:not(:first-child):not(:last-child),
+.input-group input:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.input-addon, .input-btn, .input-group .form-control {
+    display: table-cell;
+}
+
+.input-group input {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.input-addon:last-child {
+    border-left: 0;
+}
+
+.input-addon:last-child {
+    border-left: 0;
+}
+
+.input-group input:last-child,
+.input-addon:last-child,
+.input-btn:last-child>.b,
+.input-btn:last-child>.dropdown-toggle,
+.input-btn:first-child>.b:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
